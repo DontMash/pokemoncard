@@ -12,13 +12,6 @@
 
   const getRandomPokemonInput = (): string =>
     Math.round(Math.random() * (MAX_POKEMON_INDEX - 1) + 1).toString();
-  const updatePokemonInput = (name: string) => {
-    localStorage.setItem(
-      PREVIOUS_POKEMON_STORAGE_KEY,
-      localStorage.getItem(POKEMON_STORAGE_KEY)
-    );
-    localStorage.setItem(POKEMON_STORAGE_KEY, name);
-  };
 
   const defaultPokemonName =
     localStorage.getItem(POKEMON_STORAGE_KEY) ?? getRandomPokemonInput();
@@ -26,7 +19,7 @@
   const pokemonStore = writable(defaultPokemonRequest);
   pokemonStore.subscribe((request) => {
     request.then((pokemon) => {
-      updatePokemonInput(pokemon.name);
+      localStorage.setItem(POKEMON_STORAGE_KEY, pokemon.name);
     });
   });
 </script>
