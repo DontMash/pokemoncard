@@ -1,6 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
-  import PokemonType from '../icons/PokemonType.svelte';
+  import PokemonType from '../PokemonType.svelte';
   import type { Pokemon } from '../types/pokemon-api';
   import { getSpecies } from '../types/pokemon-api.service';
 

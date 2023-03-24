@@ -1,18 +1,18 @@
 <script lang="ts">
-  import { Type } from '../types/pokemon-api';
+  import { Type } from './types/pokemon-api';
 
-  import Dark from './types/Dark.svelte';
-  import Electric from './types/Electric.svelte';
-  import Fairy from './types/Fairy.svelte';
-  import Fighting from './types/Fighting.svelte';
-  import Ground from './types/Ground.svelte';
-  import Ice from './types/Ice.svelte';
-  import Normal from './types/Normal.svelte';
-  import Poison from './types/Poison.svelte';
-  import Psychic from './types/Psychic.svelte';
-  import Rock from './types/Rock.svelte';
-  import Steel from './types/Steel.svelte';
-  import Water from './types/Water.svelte';
+  import Dark from './icons/types/DarkIcon.svelte';
+  import Electric from './icons/types/ElectricIcon.svelte';
+  import Fairy from './icons/types/FairyIcon.svelte';
+  import Fighting from './icons/types/FightingIcon.svelte';
+  import Ground from './icons/types/GroundIcon.svelte';
+  import Ice from './icons/types/IceIcon.svelte';
+  import Normal from './icons/types/NormalIcon.svelte';
+  import Poison from './icons/types/PoisonIcon.svelte';
+  import Psychic from './icons/types/PsychicIcon.svelte';
+  import Rock from './icons/types/RockIcon.svelte';
+  import Steel from './icons/types/SteelIcon.svelte';
+  import Water from './icons/types/WaterIcon.svelte';
 
   export let name: Type;
 </script>

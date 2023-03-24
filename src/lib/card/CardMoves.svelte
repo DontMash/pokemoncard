@@ -1,5 +1,5 @@
 <script lang="ts">
-  import PokemonType from '../icons/PokemonType.svelte';
+  import PokemonType from '../PokemonType.svelte';
   import type { Pokemon } from '../types/pokemon-api';
   import { getMove, getPokemonMoves } from '../types/pokemon-api.service';
 

@@ -8,7 +8,8 @@ export const get = (url: string): Promise<unknown> =>
             const response = await fetch(url);
 
             if (!response.ok) {
-                return reject(`${response.status}: ${response.statusText}`);
+                console.log(response);
+                return reject(`${response.status}`);
             }
 
             const result = (await response.json());
